@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gerer mes adresses - La boutique Française {% endblock %}
+
+{% block content %}
+    <h1>Gerer mes adresses</h1>
+     <a href="{{path("account_address")}}">Retour</a> 
+    <hr>
+  {{ form(form) }}
+{% endblock %}
