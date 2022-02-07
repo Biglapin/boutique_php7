@@ -132,7 +132,10 @@ class Adress
 
         return $this;
     }
-
+    public function __ToString() 
+    {
+        return $this->getName().'[br]'.$this->getAddress().'[br]'.$this->getCity().'-'.$this->getCountry();
+    }
     public function getAddress(): ?string
     {
         return $this->address;
